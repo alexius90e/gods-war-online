@@ -1,0 +1,136 @@
+.header {
+  position: relative;
+  height: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: linear-gradient(270deg, #0d1119 0%, #192948 9.58%, #171f31 71.29%, #0d1119 94.05%);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 40px;
+    height: 100%;
+    background: url(../assets/header-wing.svg) center no-repeat;
+    background-size: 40px;
+  }
+
+  &::before {
+    left: 10px;
+  }
+
+  &::after {
+    right: 10px;
+    transform: scale(-1, 1);
+  }
+
+  &__nav {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 50px;
+
+    &-link {
+      color: #ffffff;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      text-transform: uppercase;
+      transition: $baseTransition;
+
+      &:hover {
+        color: #d1e4ff;
+      }
+
+      &_active {
+        color: #0066ff;
+
+        &:hover {
+          color: #3787ff;
+        }
+      }
+    }
+
+    &-divider {
+      flex: 0 0 auto;
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      background: url(../assets/crystal.svg) center no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__top,
+  &__bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 6px;
+      background: radial-gradient(
+          85.28% 85.28% at 89.02% 25.91%,
+          #916619 0%,
+          rgba(255, 197, 93, 0) 100%
+        ),
+        linear-gradient(180deg, #a67f31 0%, #e6d375 48.9%, #261600 51.45%, #5b4905 100%);
+    }
+  }
+
+  &__top {
+    top: -6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      background: linear-gradient(0deg, #d9b75b 0%, #d9b75b 100%),
+        linear-gradient(90deg, #a67f31 0%, #e6d375 48.9%, #261600 51.45%, #5b4905 100%);
+    }
+  }
+
+  &__bottom {
+    bottom: -3px;
+  }
+
+  &__angels {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 848px;
+    transform: translateX(-50%) translateY(-50%);
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 102px;
+      height: 100%;
+      background: url(../assets/angel.svg) center no-repeat;
+      background-size: 102px;
+    }
+
+    &::after {
+      transform: scale(-1, 1);
+    }
+  }
+}
