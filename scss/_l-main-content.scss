@@ -1,4 +1,147 @@
 .main-content {
   flex: 1 1 auto;
-  background-color: #FEF6E6;
+  padding: 25px;
+  background-color: #fef6e6;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 9px;
+    margin: 0 0 10px;
+    background-color: #d6ccb4;
+
+    &-title {
+      margin: 0;
+      color: #000;
+      font-family: "Roboto Slab";
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #531010;
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 11px;
+        height: 11px;
+        background: url(../assets/plus-icon.svg) center no-repeat;
+        background-size: 11px;
+      }
+    }
+  }
+
+  &__article {
+    padding: 11px 9px;
+    background-color: #ffffff;
+
+    &-title {
+      max-width: 224px;
+      margin: 0 0 17px;
+      color: #051524;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &-paragraph {
+      margin: 0;
+      color: #000;
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 17px 0 0;
+
+      &-tags {
+        color: #f00;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &-comment-btn {
+        padding: none;
+        color: #f00;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__comment {
+    margin: 17px 0 0;
+
+    &-textarea {
+      display: block;
+      height: 54px;
+      width: 100%;
+      padding: 7px;
+      box-sizing: border-box;
+      font-size: 6px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border: none;
+      background-color: $white;
+    }
+
+    &-buttons {
+      display: flex;
+      align-items: center;
+    }
+
+    &-button {
+      display: inline-block;
+      padding: 3px 5px;
+      color: #fff;
+      font-size: 6px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      border: none;
+      cursor: pointer;
+
+      &_save {
+        background: #14731d;
+
+        &:hover {
+          background: #105b17;
+        }
+      }
+
+      &_preview {
+        background: #989898;
+
+        &:hover {
+          background: #7b7b7b;
+        }
+      }
+    }
+  }
 }
