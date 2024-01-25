@@ -1,3 +1,133 @@
 .footer {
-  
+  position: relative;
+  z-index: 5;
+  height: 98px;
+  background: url(../assets/footer-wing-left.svg) top left,
+    url(../assets/footer-wing-right.svg) top right;
+  background-repeat: no-repeat;
+  background-color: #051524;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    width: 764px;
+    height: 150px;
+    background: url(../assets/footer.svg) center no-repeat;
+    transform: translateX(-50%);
+  }
+
+  &__crystals {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 764px;
+    transform: translateX(-50%) translateY(-50%);
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 183px;
+      height: 30px;
+      background: url(../assets/footer-crystals.svg) center no-repeat;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 24px;
+    padding: 10px 24px;
+  }
+
+  &__logo {
+    flex: 0 0 auto;
+
+    &-link {
+      display: block;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__buttons {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    &-discord {
+      display: inline-block;
+      width: 31px;
+      height: 31px;
+      background: url(../assets/discord.svg) center no-repeat;
+    }
+
+    & .button {
+      width: 144px;
+    }
+  }
+
+  &__text {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #808ca4;
+    text-align: justify;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    & > * {
+      margin: 0;
+    }
+  }
+
+  &__conditions {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #808ca4;
+      transition: $baseTransition;
+
+      &:hover {
+        color: $white;
+      }
+
+      &::after {
+        content: "|";
+        display: inline-block;
+        color: #808ca4 !important;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
 }

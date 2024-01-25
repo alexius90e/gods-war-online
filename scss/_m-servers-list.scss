@@ -1,0 +1,52 @@
+.servers-list {
+  margin: 0;
+  padding: 0;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style-type: none;
+
+  &__item {
+    margin: 0 0 5px;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      height: 6px;
+      background: url(../assets/frame-list.svg) center no-repeat;
+    }
+
+    &::before {
+      margin: 0 0 5px;
+    }
+
+    &::after {
+      display: none;
+      margin: 5px 0 0;
+    }
+
+    &:last-child::after {
+      display: block;
+    }
+
+    &-time,
+    &-counter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+      padding: 0 15px;
+    }
+
+    &-time {
+      color: #ffffff;
+    }
+
+    &-counter {
+      color: #ffe49a;
+      font-size: 8px;
+    }
+  }
+}
