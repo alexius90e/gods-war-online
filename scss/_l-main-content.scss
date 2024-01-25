@@ -1,6 +1,9 @@
 .main-content {
   flex: 1 1 auto;
   padding: 25px;
+  background: url(../assets/content-wing-left.svg) top left,
+    url(../assets/content-wing-right.svg) top right;
+    background-repeat: no-repeat;
   background-color: #fef6e6;
 
   &__heading {
