@@ -13,36 +13,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: min-content;
-  overflow: hidden;
   background-color: #a1d6ff;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    width: 1160px;
-    display: block;
-    margin: auto;
-    background-image: url(../assets/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-  }
-
-  &::before {
-    top: 0;
-    
-    height: 790px;
-  }
-
-  &::after {
-    top: 790px;
-    height: 790px;
-    transform: rotate(180deg) scale(-1, 1);
-  }
 }
 
 * {

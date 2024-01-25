@@ -1,0 +1,19 @@
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 144px;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  padding-bottom: 2px;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  background: url(../assets/frame-bg.svg) center no-repeat;
+}
