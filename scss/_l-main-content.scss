@@ -5,20 +5,21 @@
     url(../assets/content-wing-right.svg) top right;
     background-repeat: no-repeat;
   background-color: #fef6e6;
+  background-size: 64px;
 
   &__heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 9px;
-    margin: 0 0 10px;
+    padding: 10px 16px;
+    margin: 0 0 20px;
     background-color: #d6ccb4;
 
     &-title {
       margin: 0;
       color: #000;
       font-family: "Roboto Slab";
-      font-size: 9px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
@@ -27,9 +28,9 @@
     &-link {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 4px;
       color: #531010;
-      font-size: 9px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -37,23 +38,23 @@
       &::before {
         content: "";
         display: block;
-        width: 11px;
-        height: 11px;
+        width: 16px;
+        height: 16px;
         background: url(../assets/plus-icon.svg) center no-repeat;
-        background-size: 11px;
+        background-size: 16px;
       }
     }
   }
 
   &__article {
-    padding: 11px 9px;
+    padding: 16px 12px;
     background-color: #ffffff;
 
     &-title {
-      max-width: 224px;
-      margin: 0 0 17px;
+      max-width: 340px;
+      margin: 0 0 20px;
       color: #051524;
-      font-size: 12px;
+      font-size: 16px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -62,7 +63,7 @@
     &-paragraph {
       margin: 0;
       color: #000;
-      font-size: 9px;
+      font-size: 12px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -77,7 +78,7 @@
 
       &-tags {
         color: #f00;
-        font-size: 8px;
+        font-size: 11px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -86,7 +87,7 @@
       &-comment-btn {
         padding: none;
         color: #f00;
-        font-size: 8px;
+        font-size: 11px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -98,15 +99,15 @@
   }
 
   &__comment {
-    margin: 17px 0 0;
+    margin: 20px 0 0;
 
     &-textarea {
       display: block;
-      height: 54px;
+      height: 80px;
       width: 100%;
-      padding: 7px;
+      padding: 10px;
       box-sizing: border-box;
-      font-size: 6px;
+      font-size: 10px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -121,9 +122,9 @@
 
     &-button {
       display: inline-block;
-      padding: 3px 5px;
+      padding: 4px 8px;
       color: #fff;
-      font-size: 6px;
+      font-size: 11px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
