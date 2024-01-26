@@ -44,15 +44,15 @@ figure {
 .server-status {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .server-status__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
-  padding: 0 16px;
-  font-size: 9px;
+  gap: 10px;
+  padding: 0 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -72,13 +72,14 @@ figure {
 .server-status__total {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .server-status__total::after, .server-status__total::before {
   content: "";
   display: block;
-  height: 12px;
+  height: 16px;
   background: url(../assets/top-fraame.svg) center no-repeat;
+  background-size: 100%;
 }
 .server-status__total::after {
   transform: rotate(180deg);
@@ -87,8 +88,8 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
-  padding: 0 5px;
+  gap: 10px;
+  padding: 0 10px;
 }
 .server-status__total-item-text {
   display: flex;
@@ -98,38 +99,40 @@ figure {
 .server-status__total-item-text::before {
   content: "";
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background: url(../assets/indicator-green.svg) center no-repeat;
+  background-size: 100%;
 }
 .server-status__total-item-text_active::before {
-  background: url(../assets/indicator-black.svg) center no-repeat;
+  background-image: url(../assets/indicator-black.svg);
 }
 
 .servers-list {
   margin: 0;
   padding: 0;
-  font-size: 9px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   list-style-type: none;
 }
 .servers-list__item {
-  margin: 0 0 5px;
+  margin: 0 0 10px;
 }
 .servers-list__item::before, .servers-list__item::after {
   content: "";
   display: block;
-  height: 6px;
+  height: 8px;
   background: url(../assets/frame-list.svg) center no-repeat;
+  background-size: 90%;
 }
 .servers-list__item::before {
-  margin: 0 0 5px;
+  margin: 0 0 10px;
 }
 .servers-list__item::after {
   display: none;
-  margin: 5px 0 0;
+  margin: 10px 0 0;
 }
 .servers-list__item:last-child::after {
   display: block;
@@ -138,35 +141,36 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
-  padding: 0 15px;
+  gap: 10px;
+  padding: 0 20px;
 }
 .servers-list__item-time {
   color: #ffffff;
 }
 .servers-list__item-counter {
   color: #ffe49a;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .frame {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 144px;
+  max-width: 220px;
   width: 100%;
-  height: 30px;
+  aspect-ratio: 4.8/1;
   margin: 0 auto;
   padding-bottom: 2px;
   box-sizing: border-box;
   color: #fff;
   text-align: center;
-  font-size: 10px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
   background: url(../assets/frame-bg.svg) center no-repeat;
+  background-size: 100%;
 }
 
 .app-content {
@@ -193,10 +197,10 @@ figure {
   top: 0;
   bottom: 0;
   display: block;
-  width: 40px;
+  width: 50px;
   height: 100%;
   background: url(../assets/header-wing.svg) top center no-repeat;
-  background-size: 40px;
+  background-size: 100%;
 }
 .header::before {
   left: 10px;
@@ -293,7 +297,7 @@ figure {
 
 .main {
   display: flex;
-  min-height: 692px;
+  min-height: 920px;
 }
 
 .footer {
@@ -413,7 +417,7 @@ figure {
 
 .sidebar {
   position: relative;
-  flex: 0 0 160px;
+  flex: 0 0 224px;
   background-color: #051524;
 }
 .sidebar__content {
@@ -421,11 +425,11 @@ figure {
   z-index: 2;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   padding: 12px 8px;
   margin: 0 auto;
   color: #ffffff;
-  font-size: 9px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -466,9 +470,9 @@ figure {
   display: flex;
   align-items: center;
   gap: 2px;
-  padding: 0 8px;
+  padding: 20px 8px;
   color: #fff;
-  font-size: 28px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
@@ -484,7 +488,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px 0;
+  padding: 6px 0;
   letter-spacing: -1px;
   border-radius: 2px;
   background: #12395d;
@@ -494,21 +498,22 @@ figure {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 5px 0;
+  padding: 8px 0;
 }
 .sidebar__lang-button {
   display: inline-block;
-  height: 24px;
-  width: 24px;
+  height: 40px;
+  width: 40px;
   padding: 0;
   margin: 0;
   color: #ffffff;
-  font-size: 9px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 700;
   line-height: 9px;
   border: none;
   background: url(../assets/button-crystal.svg) center no-repeat;
+  background-size: 52px;
   transition: all ease-in-out 0.15s;
   cursor: pointer;
 }
@@ -519,49 +524,51 @@ figure {
   filter: brightness(0.9);
 }
 .sidebar__lang-button_active {
-  background: url(../assets/button-crystal-active.svg) center no-repeat;
+  background-image: url(../assets/button-crystal-active.svg);
 }
 .sidebar__form {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .sidebar__form-fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   margin: 0;
   padding: 0;
   border: none;
 }
 .sidebar__form-fieldset_buttons {
-  margin-top: 15px;
+  margin-top: 18px;
 }
 .sidebar__form-fieldset_buttons::before {
   content: "";
   display: block;
-  height: 6px;
+  height: 9px;
   width: 100%;
   background: url(../assets/frame-list.svg) center no-repeat;
+  background-size: 90%;
 }
 .sidebar__form-input {
   position: relative;
-  display: block;
-  padding: 0;
-  width: 132px;
-  padding: 3px 20px;
+  display: flex;
+  padding: 4px 20px;
+  width: 184px;
+  box-sizing: border-box;
+  aspect-ratio: 6.6/1;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 600;
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  box-sizing: border-box;
   border: none;
   background: url(../assets/input-crystal.svg) center left;
   background-repeat: no-repeat;
+  background-size: 100%;
   outline: none;
 }
 .sidebar__form-input::-ms-input-placeholder {
@@ -574,8 +581,8 @@ figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  margin: 0 0 15px;
+  gap: 8px;
+  margin: 0 0 18px;
 }
 .sidebar__auth-links-link {
   color: #ffe49a;
@@ -583,16 +590,16 @@ figure {
 .sidebar__info {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding: 15px 0;
+  gap: 10px;
+  padding: 18px 0;
 }
 .sidebar__info-server {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
-  padding: 0 6px;
-  font-size: 9px;
+  gap: 10px;
+  padding: 0 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -600,34 +607,37 @@ figure {
 .sidebar__info-server-text {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 4px;
   color: #ffffff;
 }
 .sidebar__info-server-text::before {
   content: "";
   display: block;
-  height: 16px;
-  width: 16px;
+  height: 20px;
+  width: 20px;
   background: url(../assets/indicator-green.svg) center no-repeat;
+  background-size: 100%;
 }
 .sidebar__info-server-value {
   color: #90ff12;
 }
 .sidebar__info-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 23px;
+  display: block;
+  max-width: 208px;
+  width: 100%;
   padding: 0;
+  margin: 0 auto;
+  aspect-ratio: 6.4/1;
   color: #fff;
   text-align: center;
-  font-size: 10px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 600;
   line-height: 10px;
   text-transform: uppercase;
   border: none;
   background: url(../assets/button-crystal-bg.svg) center no-repeat;
+  background-size: 100%;
   transition: all ease-in-out 0.15s;
   cursor: pointer;
 }
@@ -645,7 +655,7 @@ figure {
   max-width: 112px;
   color: #ffe49a;
   text-align: center;
-  font-size: 9px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

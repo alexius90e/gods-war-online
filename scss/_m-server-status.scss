@@ -1,15 +1,15 @@
 .server-status {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 
   &__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
-    padding: 0 16px;
-    font-size: 9px;
+    gap: 10px;
+    padding: 0 20px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
@@ -32,14 +32,15 @@
   &__total {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 
     &::after,
     &::before {
       content: "";
       display: block;
-      height: 12px;
+      height: 16px;
       background: url(../assets/top-fraame.svg) center no-repeat;
+      background-size: 100%;
     }
 
     &::after {
@@ -50,8 +51,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 5px;
-      padding: 0 5px;
+      gap: 10px;
+      padding: 0 10px;
 
       &-text {
         display: flex;
@@ -61,14 +62,15 @@
         &::before {
           content: "";
           display: block;
-          width: 16px;
-          height: 16px;
+          width: 20px;
+          height: 20px;
           background: url(../assets/indicator-green.svg) center no-repeat;
+          background-size: 100%;
         }
 
         &_active {
           &::before {
-            background: url(../assets/indicator-black.svg) center no-repeat;
+            background-image: url(../assets/indicator-black.svg);
           }
         }
       }
