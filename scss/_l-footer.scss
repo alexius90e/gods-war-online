@@ -1,20 +1,23 @@
 .footer {
   position: relative;
   z-index: 5;
-  height: 98px;
+  aspect-ratio: 7.5711 / 1;
   background: url(../assets/footer-wing-left.svg) top left,
     url(../assets/footer-wing-right.svg) top right;
   background-repeat: no-repeat;
   background-color: #051524;
+  background-size: 120px;
 
   &::before {
     content: "";
     position: absolute;
     top: -4px;
     left: 50%;
-    width: 764px;
-    height: 150px;
+    display: block;
+    width: 1054px;
+    aspect-ratio: 5.1275 / 1;
     background: url(../assets/footer.svg) center no-repeat;
+    background-size: 100%;
     transform: translateX(-50%);
   }
 
@@ -25,16 +28,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 764px;
+    width: 1054px;
     transform: translateX(-50%) translateY(-50%);
 
     &::before,
     &::after {
       content: "";
       display: block;
-      width: 183px;
-      height: 30px;
+      width: 257px;
+      aspect-ratio: 6.1 / 1;
       background: url(../assets/footer-crystals.svg) center no-repeat;
+      background-size: 100%;
     }
   }
 
@@ -44,8 +48,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 6px 24px;
-    padding: 10px 24px;
+    gap: 6px 36px;
+    height: 100%;
+    padding: 12px 32px;
+    box-sizing: border-box;
   }
 
   &__logo {
@@ -58,6 +64,7 @@
     &-image {
       display: block;
       max-width: 100%;
+      width: 172px;
       height: auto;
     }
   }
@@ -70,13 +77,14 @@
 
     &-discord {
       display: inline-block;
-      width: 31px;
-      height: 31px;
+      width: 45px;
+      height: 45px;
       background: url(../assets/discord.svg) center no-repeat;
+      background-size: 100%;
     }
 
     & .button {
-      width: 144px;
+      width: 220px;
     }
   }
 
@@ -87,7 +95,7 @@
     gap: 6px;
     color: #808ca4;
     text-align: justify;
-    font-size: 6px;
+    font-size: 8px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -102,7 +110,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 7px;
+    font-size: 9px;
     font-style: normal;
     font-weight: 300;
     line-height: 12px;
